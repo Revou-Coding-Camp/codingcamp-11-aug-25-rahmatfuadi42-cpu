@@ -1,14 +1,17 @@
+console.log("Hello World");
 // Uncomment to automatically trigger welcome message
-welcomeSpeech();
+// welcomeSpeech();
 
 /**
  * Prompts the user for their name and displays it in the greeting element.
  * If the user enters a name, it updates the content of the element with id 'user-greeting'.
  * If no name is provided, the greeting remains unchanged.
  */
+
+//call the function to welcome speech
 function welcomeSpeech() {
     let userName = prompt("What is your name?");
-    if (userName !='Revou') {
+    if (userName !='') {
         document.getElementById('user-greeting').textContent = userName;
     }
 }
